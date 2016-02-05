@@ -1,0 +1,735 @@
+.page-header {
+  height: 488px;
+  flex-wrap: wrap;
+
+  background: url(../../img/iphone-hand-1.png) no-repeat 40% 85%, url(../../img/background-1@1x.jpg) no-repeat top center;
+
+  @include mq-sm {
+    height: 729px;
+
+    background: url(../../img/iphone-hand-2@1x.png) 50% 110% no-repeat, url(../../img/background-2@1x.jpg) no-repeat top center;
+  }
+
+  @include mq-md {
+    height: 729px;
+
+    background: url(../../img/iphone-hand-3@1x.png) 50% 230% no-repeat, url(../../img/background-fullsize.jpg) no-repeat center center;
+  }
+
+  @include mq-lg {
+    height: 729px;
+
+    background: url(../../img/iphone-hand-3@1x.png) 50% 230% no-repeat, url(../../img/background-fullsize.jpg) no-repeat center center;
+  }
+}
+
+.page-header__menu-wrapper {
+  position: relative;
+
+  background: rgba(0, 0, 0, 0.3);
+
+  z-index: 1;
+}
+
+.page-header__menu {
+  position: relative;
+
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 2;
+
+  @include mq-md {
+    height: 110px;
+  }
+
+  @include mq-lg {
+    height: 110px;
+  }
+}
+
+.page-header__logo {
+  margin-left: 20px;
+
+  flex-basis: 74px;
+  height: 24px;
+
+  background: url(../../img/logo-1.svg) no-repeat;
+
+  @include mq-sm {
+    flex-basis: 145px;
+    height: 40px;
+
+    background: url(../../img/Pink-logo-2@1x.png) no-repeat;
+  }
+
+  @include mq-md {
+    flex-basis: 145px;
+    height: 40px;
+
+    background: url(../../img/Pink-logo-3@1x.png) no-repeat;
+  }
+
+  @include mq-lg {
+    flex-basis: 145px;
+    height: 40px;
+
+    background: url(../../img/Pink-logo-3@1x.png) no-repeat;
+  }
+}
+
+.page-header__burger {
+  margin-right: 20px;
+
+  flex-basis: 50px;
+  height: 24px;
+
+  background: url(../../img/menu-burger.svg) no-repeat;
+}
+
+.page-header__navigation {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 20;
+
+  & > li {
+    color: white;
+    padding: 0 10px;
+  }
+
+  @include mq-md {
+    font-size: 18px;
+  }
+
+  @include mq-lg {
+    font-size: 18px;
+  }
+}
+
+.page-header__slogan-wrapper {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  text-align: center;
+
+  @include mq-sm {
+    margin-top: 120px;
+    margin-left: 100px;
+
+    justify-content: flex-start;
+  }
+
+  @include mq-md {
+    margin-top: 120px;
+    margin-left: 130px;
+
+    justify-content: flex-start;
+  }
+
+  @include mq-lg {
+    margin-top: 120px;
+    margin-left: 130px;
+
+    justify-content: flex-start;
+  }
+}
+
+.page-header__slogan {
+  max-width: 250px;
+
+  color: white;
+  font-size: $font-size-big;
+
+  @include mq-sm {
+    max-width: 180px;
+
+    font-size: 40px;
+  }
+
+  @include mq-md {
+    max-width: 220px;
+
+    line-height: 55px;
+    font-size: 50px;
+  }
+
+  @include mq-lg {
+    max-width: 220px;
+
+    line-height: 55px;
+    font-size: 50px;
+  }
+}
+
+.page-header__download-button-wrapper {
+  margin-top: 310px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    margin-left: 40px;
+    margin-top: 0;
+
+    justify-content: flex-start;
+
+    background: none;
+  }
+
+  @include mq-md {
+    margin-left: 40px;
+    margin-top: 10px;
+
+    justify-content: flex-start;
+
+    background: none;
+  }
+
+  @include mq-lg {
+    margin-left: 40px;
+    margin-top: 10px;
+
+    justify-content: flex-start;
+
+    background: none;
+  }
+}
+
+.page-header__icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    margin-left: 85px;
+
+    justify-content: flex-start;
+
+    background: none;
+  }
+
+  @include mq-md {
+    margin-left: 95px;
+
+    justify-content: flex-start;
+
+    background: none;
+  }
+
+  @include mq-lg {
+    margin-left: 95px;
+
+    justify-content: flex-start;
+
+    background: none;
+  }
+}
+
+.page-header__icons-description-wrapper {
+  padding: 35px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  color: white;
+  font-size: $font-size-normal;
+  text-align: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    margin-left: 40px;
+
+    justify-content: flex-start;
+
+    font-size: 18px;
+
+    background: none;
+  }
+
+  @include mq-md {
+    margin-left: 90px;
+
+    justify-content: flex-start;
+
+    font-size: 18px;
+
+    background: none;
+  }
+
+  @include mq-lg {
+    margin-left: 90px;
+
+    justify-content: flex-start;
+
+    font-size: 18px;
+
+    background: none;
+  }
+}
+
+.page-header__icons-description {
+  max-width: 300px;
+
+  @include mq-sm {
+    max-width: 280px;
+  }
+}
+/*
+.page-header {
+  height: 488px;
+
+  background: url(../../img/iphone-hand-1.png) no-repeat 40% 85%, url(../../img/background-1@1x.jpg) no-repeat top center;
+
+  @include mq-sm {
+    height: 729px;
+
+    background: url(../../img/iphone-hand-2@1x.png) 40% 110% no-repeat, url(../../img/background-2@1x.jpg) no-repeat top center;
+  }
+}
+
+.page-header__logo {
+  margin-left: 20px;
+
+  flex-basis: 74px;
+  height: 24px;
+
+  background: url(../../img/logo-1.svg) no-repeat;
+
+  @include mq-sm {
+    flex-basis: 145px;
+    height: 40px;
+
+    background: url(../../img/Pink-logo-2@1x.png) no-repeat;
+  }
+}
+
+.page-header__burger {
+  margin-right: 20px;
+
+  flex-basis: 50px;
+  height: 24px;
+
+  background: url(../../img/menu-burger.svg) no-repeat;
+
+  @include mq-md {
+    display: none;
+  }
+}*/
+
+/*.page-header {
+  height: 488px;
+
+  background: url(../../img/iphone-hand-1.png) no-repeat 40% 85%, url(../../img/background-1@1x.jpg) no-repeat top center;
+
+  @include mq-sm {
+    height: 729px;
+
+    background: url(../../img/iphone-hand-2@1x.png) 40% 110% no-repeat, url(../../img/background-2@1x.jpg) no-repeat top center;
+  }
+}
+
+.page-header__menu {
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: black;
+
+  opacity: 0.6;
+
+  @include mq-sm {
+    height: 110px;
+  }
+}
+
+.page-header__logo {
+  margin-left: 20px;
+
+  flex-basis: 74px;
+  height: 24px;
+
+  background: url(../../img/logo-1.svg) no-repeat;
+
+  @include mq-sm {
+    flex-basis: 145px;
+    height: 40px;
+
+    background: url(../../img/Pink-logo-2@1x.png) no-repeat;
+  }
+}
+
+.page-header__burger {
+  margin-right: 20px;
+
+  flex-basis: 50px;
+  height: 24px;
+
+  background: url(../../img/menu-burger.svg) no-repeat;
+
+  @include mq-md {
+    display: none;
+  }
+}
+
+.page-header__menu-big {
+  display: none;
+
+  @include mq-md {
+    display: flex;
+
+    & > li {
+      color: white;
+    }
+  }
+}
+
+.page-header__slogan-wrapper {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+
+  & > div {
+    width: 220px;
+
+    color: white;
+    text-align: center;
+    font-size: $font-size-big;
+  }
+
+  @include mq-sm {
+    margin-top: 110px;
+    margin-left: 100px;
+
+    width: 100px;
+
+    justify-content: flex-start;
+
+    & > div {
+      font-size: 40px;
+    }
+  }
+}
+
+.page-header__button-wrapper {
+  margin-top: 310px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    margin-left: 40px;
+    margin-top: 0;
+
+    width: 300px;
+    background: none;
+  }
+}
+
+.page-header__icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    margin-left: 40px;
+    margin-top: 0;
+
+    width: 300px;
+    background: none;
+  }
+}
+
+.page-header__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 250px;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    background: none;
+  }
+}
+
+.page-header__icons-description-wrapper {
+  padding-top: 34px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    margin-left: 40px;
+    margin-top: 0;
+
+    width: 300px;
+
+    background: none;
+  }
+}
+
+.page-header__icons-description {
+  flex-basis: 300px;
+  color: white;
+  text-align: center;
+
+  @include mq-sm {
+    flex-basis: 300px;
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.page-header {
+  height: 488px;
+
+  background: url(../../img/background-1@1x.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.menu--black-line {
+  background: black;
+
+  opacity: 0.6;
+}
+
+.menu__wrapper {
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  flex-basis: 74px;
+  height: 24px;
+
+  background: url(../../img/logo-1.svg) no-repeat;
+
+  @include mq-sm {
+    flex-basis: 145px;
+    height: 40px;
+
+    background: url(../../img/Pink-logo-2@1x.png) no-repeat;
+  }
+}
+
+.page-header__burger {
+  flex-basis: 50px;
+  height: 24px;
+
+  background: url(../../img/menu-burger.svg) no-repeat;
+}
+
+.page-header__slogan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  color: white;
+  text-align: center;
+  font-size: $font-size-big;
+
+  z-index: 1;
+
+  & > div {
+    margin-top: 30px;
+
+    flex-basis: 250px;
+  }
+}
+
+.page-header__hand-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page-header__hand {
+  margin-top: 35px;
+
+  flex-basis: 258px;
+  height: 286px;
+
+  background: url(../../img/iphone-hand-1.png) no-repeat top center;
+}
+
+.page-header__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    background: none;
+  }
+}
+
+.page-header__icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    background: none;
+  }
+}
+
+.page-header__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 250px;
+}
+
+.page-header__icons-description-wrapper {
+  padding-top: 34px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d2631;
+
+  @include mq-sm {
+    background: none;
+  }
+}
+
+.page-header__icons-description {
+  flex-basis: 250px;
+  color: white;
+}*/
+
+
+/*.page-header__menu {
+  position: relative;
+
+  background: black;
+  opacity: 0.6;
+
+  z-index: 2;
+}
+
+.menu__wrapper {
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  flex-basis: 74px;
+  height: 24px;
+
+  background: url(../../img/logo-1.svg) no-repeat;
+
+  @include mq-sm {
+    flex-basis: 145px;
+    height: 40px;
+
+    background: url(../../img/Pink-logo-2@1x.png) no-repeat;
+  }
+}
+
+.page-header__burger {
+  flex-basis: 50px;
+  height: 24px;
+
+  background: url(../../img/menu-burger.svg) no-repeat;
+}
+
+.page-header__navigation {
+  outline: 1px solid white;
+
+  display: flex;
+  justify-content: space-between;
+
+  & > li {
+    color: white;
+    padding: 0 10px;
+  }
+}
+
+.page-header__slogan {
+  position: relative;
+  top: -66px;
+
+  height: 488px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  color: white;
+  text-align: center;
+  font-size: $font-size-big;
+
+  background: url(../../img/background-1@1x.jpg) no-repeat top center;
+  background-size: cover;
+
+  z-index: 1;
+
+  & > div {
+    margin-top: 100px;
+
+    flex-basis: 250px;
+  }
+}
+
+.page-header__hand {
+  height: 286px;
+
+  background: url(../../img/iphone-hand-1.png) no-repeat top center;
+}*/

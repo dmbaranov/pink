@@ -1,0 +1,23 @@
+@mixin mq-xs {
+  @media (max-width: #{$sm-device}) {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media (min-width: #{$sm-device}) and (max-width:  #{$md-device}) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (min-width: #{$md-device}) and (max-width: #{$lg-device}) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (min-width: #{$lg-device}) {
+    @content;
+  }
+}

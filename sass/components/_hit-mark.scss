@@ -1,0 +1,22 @@
+.table--hit::before {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+
+  height: 35px;
+  width: 130px;
+
+  line-height: 30px;
+  text-transform: uppercase;
+
+  background: #d22856;
+
+  transform: rotate(-40deg);
+  content: "хит";
+
+  @include mq-sm {
+    height: 25px;
+
+    line-height: 25px;
+  }
+}

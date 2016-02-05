@@ -1,0 +1,28 @@
+.page-header__download-button {
+  margin: 28px 0;
+
+  padding: 15px 0;
+  max-width: 380px;
+  flex-grow: 1;
+
+  color: white;
+  text-align: center;
+  font-size: $font-size-middle;
+  font-weight: bold;
+  text-decoration: none;
+
+  border: 5px solid white;
+  border-radius: 50px;
+
+  @include mq-sm {
+    max-width: 280px;
+  }
+
+  @include mq-md {
+    font-size: 21px;
+  }
+
+  @include mq-lg {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,11 @@
+.page-header__icons {
+  max-width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  @include mq-sm {
+    max-width: 200px;
+  }
+}

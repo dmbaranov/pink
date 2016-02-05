@@ -1,0 +1,143 @@
+table {
+  position: relative; //was absolute, idk why
+  left: -90%;
+
+  width: 280%;
+
+  text-transform: uppercase;
+
+  @include mq-sm {
+    left: 0;
+
+    width: 100%;
+
+    text-transform: none;
+  }
+
+  @include mq-md {
+    left: 0;
+
+    width: 100%;
+
+    text-transform: none;
+  }
+
+  @include mq-lg {
+    left: 0;
+
+    width: 100%;
+
+    text-transform: none;
+  }
+}
+
+th, td {
+  position: relative;
+
+  width: 33%;
+  padding: 25px 0;
+
+  border: 2px solid #e5e5e5;
+
+  @include mq-sm {
+    width: 25%;
+  }
+
+  @include mq-md {
+    width: 25%;
+  }
+
+  @include mq-lg {
+    width: 25%;
+  }
+}
+
+th {
+  color: white;
+  text-transform: uppercase;
+
+  background: #283645;
+  border-bottom: 2px solid transparent;
+
+  overflow: hidden;
+}
+
+td {
+  padding-left: 26px;
+
+  background: #ffffff;
+
+  @include mq-sm {
+    text-align: center;
+  }
+
+  @include mq-md {
+    text-align: center;
+  }
+
+  @include mq-lg {
+    text-align: center;
+  }
+}
+
+td.hidden-xs {
+  text-align: left;
+}
+
+.table__icon {
+  position: absolute;
+  right: 5%;
+
+  @include mq-sm {
+    position: relative;
+  }
+
+  @include mq-md {
+    position: relative;
+  }
+
+  @include mq-lg {
+    position: relative;
+  }
+}
+
+.table-header {
+  font-size: 18px;
+
+  @include mq-sm {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  @include mq-md {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  @include mq-lg {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.table-text {
+  font-size: 24px;
+
+  @include mq-sm {
+    font-size: 18px;
+  }
+
+  @include mq-md {
+    font-size: 18px;
+  }
+
+  @include mq-lg {
+    font-size: 18px;
+  }
+}
+
+.table--empty {
+  background: none;
+  border-top: 2px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
+}

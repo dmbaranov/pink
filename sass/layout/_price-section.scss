@@ -1,0 +1,25 @@
+.bg {
+  background: #f2f2f2;
+}
+
+.price-section {
+  background: #f2f2f2;
+
+  overflow: hidden;
+
+  @include mq-sm {
+    padding-bottom: 100px;
+  }
+
+  @include mq-md {
+    padding-bottom: 100px;
+  }
+
+  @include mq-lg {
+    padding-bottom: 100px;
+  }
+}
+
+.table-slider {
+  padding: 45px 0;
+}

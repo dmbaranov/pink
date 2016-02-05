@@ -1,0 +1,13 @@
+.trapeze {
+  border-right: 100vw solid #f2f2f2;
+  border-top: 8vw solid #fff;
+
+  @include mq-md {
+    border-top: 5vw solid #fff;
+  }
+
+  @include mq-lg {
+    border-right: $lg-device solid #f2f2f2;
+    border-top: 3vw solid #fff;
+  }
+}

@@ -1,0 +1,10 @@
+body {
+  font-family: $font;
+  background: black;
+}
+
+.container-fluid {
+  @include mq-lg {
+    max-width: $lg-device;
+  }
+}

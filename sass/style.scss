@@ -1,0 +1,55 @@
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+
+@import "base/_main.scss";
+
+@import "layout/_grid.scss";
+@import "layout/_header-section.scss";
+@import "layout/_features-section.scss";
+@import "layout/_comment-section.scss";
+@import "layout/_price-section.scss";
+@import "layout/_footer-section.scss";
+
+@import "components/_download-button.scss";
+@import "components/_download-icons.scss";
+@import "components/_price-table.scss";
+@import "components/_hit-mark.scss";
+@import "components/_trapeze.scss";
+@import "components/_slider-buttons.scss";
+@import "components/_triangle.scss";
+@import "components/_map-style.scss";
+@import "components/_24-hours.scss";
+
+@import "temp.scss";
+
+.well {
+  height: 10vh;
+
+  background: #dadada;
+}
+
+.mobile {
+  height: 200px;
+}
+
+.special {
+  @include mq-lg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.test {
+  display: flex;
+}
+
+.wrapper-first {
+  @include mq-sm {
+    max-width: 500px;
+  }
+
+  @include mq-lg {
+    max-width: 700px;
+  }
+}

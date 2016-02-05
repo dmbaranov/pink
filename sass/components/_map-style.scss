@@ -1,0 +1,18 @@
+#map {
+  position: relative;
+  z-index: 1;
+
+  height: 200px;
+
+  @include mq-sm {
+    height: 400px;
+  }
+
+  @include mq-md {
+    height: 550px;
+  }
+
+  @include mq-lg {
+    height: 550px;
+  }
+}
